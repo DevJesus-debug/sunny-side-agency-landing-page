@@ -15,7 +15,8 @@
 
 
 .body-wrap{
-    width:1440px;
+    max-width:1440px;
+    min-width: 375px;
     margin: 0 auto;
 }
 
@@ -79,3 +80,49 @@ nav ul button{
     font-family: var(--paragraph-text);
     margin-bottom: 110px;
 }
+
+.grid-cont{
+    display: grid;
+    grid-template-areas:"text1 img1"
+                        "img2 text2"
+                        "content1 content2";
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    
+}
+
+.text-1{
+    grid-area: text1;
+}
+
+.main-img-1{
+    grid-area: img1;
+}
+
+.main-img-1 img{
+  height: 100%;
+  width: 100%;
+}
+
+.text-2{
+    grid-area: text2;
+}
+
+.main-img-2{
+    grid-area: img2;
+}
+
+.main-img-2 img{
+   height: 100%;
+   width: 100%;
+}
+
+.content-1{
+    grid-area: content1;
+}
+
+.content-2{
+    grid-area: content2;
+}
+
