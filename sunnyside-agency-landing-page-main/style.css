@@ -13,6 +13,20 @@
     --paragraph-text:'Fraunces', serif;
 }
 
+h3{
+    font-family: var(--paragraph-text);
+    font-weight: 900;
+}
+
+p{
+    font-family: var(--main-text);
+    color: hsl(232, 10%, 55%);
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
 
 .body-wrap{
     max-width:1440px;
@@ -21,10 +35,10 @@
 }
 
 .header-wrap{
-    max-width: 1445px;
-    height: 85vh;
+    max-width: 1440px;
+    height: 80vh;
     background-image: url("./images/desktop/image-header.jpg");
-    background-position: center;
+    background-position:center;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -65,20 +79,20 @@ nav ul button{
 }
 
 .header-title{
-    margin-top: 90px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 
 .header-title h1{
-    font-size: 55px;
+    font-size: 60px;
     letter-spacing: 13px;
     color: white;
     text-transform: uppercase;
     font-family: var(--paragraph-text);
-    margin-bottom: 110px;
+    margin-bottom: 100px;
+    margin-top: 70px;
 }
 
 .grid-cont{
@@ -88,29 +102,83 @@ nav ul button{
                         "content1 content2";
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr;
-    align-items: center;
-    
+    place-items: center;
 }
+
+.grid-cont h3{
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+
+.grid-cont p{
+    margin-bottom: 25px;
+    font-size: 18px;
+    padding-right: 50px;
+    line-height: 24px;
+}
+
 
 .text-1{
     grid-area: text1;
+    width: 70%;
+}
+
+
+.text-1 h3{
+    padding-right: 40px;
+}
+
+.link-cont{
+    width: 130px;
+    text-align: center;
+}
+
+.link-cont a{
+    font-family: var(--paragraph-text);
+    text-transform: uppercase;
+}
+
+.link-cont .border{
+    width: 100%;
+    height: 10px;
+    background-color: rgba(255, 222, 74, 0.513);
+    border-radius: 10px;
+    margin-top: -10px;
+}
+
+.text-1 a .border{
+    height: 7px;
+    margin-top: -5px;
+    border-radius: 5px;
+    width: 115px;
+    background-color: rgb(255, 81, 0);
 }
 
 .main-img-1{
     grid-area: img1;
+    height: 100%;
+    width: 100%;
 }
 
 .main-img-1 img{
-  height: 100%;
-  width: 100%;
+    height: 100%;
+    width: 100%;
 }
 
 .text-2{
     grid-area: text2;
+    width: 70%;
+}
+
+.text-2 a{
+    font-family: var(--paragraph-text);
+    text-transform: uppercase;
 }
 
 .main-img-2{
     grid-area: img2;
+    height: 100%;
+    width: 100%;
 }
 
 .main-img-2 img{
@@ -118,11 +186,42 @@ nav ul button{
    width: 100%;
 }
 
-.content-1{
-    grid-area: content1;
+
+.content .text-cont{
+    width: 50%;
+    margin: 0 auto;
 }
 
-.content-2{
+.content{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.content p{
+    margin-bottom: 60px;
+    padding: 0;
+}
+
+.content h3{
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.content.box-1{
+    grid-area: content1;
+    background-image: url("./images/desktop/image-graphic-design.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.content.box-2{
     grid-area: content2;
+    background-image: url("./images/desktop/image-photography.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
 }
 
