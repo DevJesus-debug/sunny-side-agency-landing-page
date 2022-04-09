@@ -93,7 +93,26 @@ nav ul button{
     font-family: var(--paragraph-text);
     margin-bottom: 100px;
     margin-top: 70px;
+    text-align: center;
 }
+
+.header-title .arrow {
+    animation: 1.5s linear  infinite alternate bounce; 
+
+}
+
+
+@keyframes bounce {
+    0%{
+        transform: translateY(10px);
+    }
+
+    100%{
+        transform: translateY(-10px);
+    }
+
+    
+    }
 
 /*Grid container of content*/
 
@@ -328,6 +347,7 @@ nav ul button{
 
  .img-cont img{
      width: 100%;
+     height: 100%;
  }
 
  /*Footer**********************************/
@@ -336,4 +356,33 @@ nav ul button{
      display: flex;
      flex-direction: column;
      align-items: center;
+     background-color:hsl(168, 62%, 67%) ;
+     padding: 65px 0;
  }
+
+ footer .logo{
+    margin-bottom: 25px;
+ }
+
+ footer .footer-nav{
+    display: flex;
+    list-style: none;
+ }
+
+ footer .footer-nav li{
+     padding: 0 20px;
+     font-family: var(--main-text);
+     color:hsl(168, 34%, 41%);
+ }
+
+ footer .social-icons{
+     display: flex;
+     list-style: none;
+     margin-top: 70px;
+     margin-bottom: 27px;
+ }
+
+ footer .social-icons li{
+    padding: 0 15px;
+ }
+
