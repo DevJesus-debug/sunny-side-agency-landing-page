@@ -442,17 +442,61 @@ nav ul button{
 
  @media screen and (max-width:650px) {
   
+    header{
+        position: relative;
+    }
+
     nav ul{
         display: none;
+    }
+
+    nav ul.active{
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        width: 312px;
+        height: 300px;
+        padding: 20px;
+        right: 0;
+        top: 100px;
+        right: 30px;
+        z-index: 99;
+    }
+
+    .triangle{
+        border-bottom: 30px solid rgb(255, 255, 255);
+        border-left: 30px solid transparent;
+        position: absolute;
+        top: -29px;
+        right: 0;
+    }
+
+    nav ul li {
+        color: gray;
+        margin-right: 0;
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+
+    nav ul button {
+      background-color: rgb(255, 216, 40);
+      margin: 0;
+      padding: 20px 30px;
     }
     
     .hamburger{
        display: block;
+       
    }
+
+  
 
    .header-wrap{
     max-width: 1440px;
-    height: 60vh;
+    height: 75vh;
     background-image: url("./images/mobile/image-header.jpg");
     background-position:center;
     background-size: cover;
